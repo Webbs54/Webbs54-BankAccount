@@ -22,8 +22,9 @@ public class BankService {
      * TODO: implement functionality to increase the user's balance by amount.
      * @param amount the amount to be deposited.
      */
-    public void deposit(double amount){
-
+    public void deposit(double amount)
+    {
+        balance += amount;
     }
 
     /**
@@ -31,15 +32,17 @@ public class BankService {
      * If a withdrawl would result in the user having a negative balance, the withdrawl should not occur.
      * @param amount the amount to be withdrawn.
      */
-    public void withdraw(double amount){
-
+    public void withdraw(double amount)
+    {
+        balance -= amount;
     }
 
     /**
      * TODO: return the balance.
      * @return the user's balance.
      */
-    public double getBalance(){
-        return 0;
+    public double getBalance()
+    {
+        return balance;
     }
 }
